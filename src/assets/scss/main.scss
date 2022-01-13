@@ -232,3 +232,196 @@ body {
         }
     }
 }
+
+.popular-news {
+    margin-top: 121px;
+    padding-bottom: 100px;
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+    &__content {
+        max-width: 382px;
+    }
+    &__title {
+        @extend %title-block;
+    }
+    &__txt {
+        line-height: 160%;
+        opacity: 0.7;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+    &__button {
+        @extend %btn-transparent;
+        margin-top: 47px;
+    }
+    &__slider {
+        &-wrapper {
+            margin-right: -800px;
+            padding-right: 800px;
+            margin-left: 133px;
+            overflow: hidden;
+        }
+    }
+}
+
+.news-slider {
+    max-width: 385px;
+    &__item {
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        transition: .3s all;
+        &:hover {
+            color: #fff;
+            .news-slider__item-overlay {
+                background: #3465A6;
+                opacity: 0.7;
+            }
+        }
+        &-wrapper {
+            padding-left: 17px;
+            padding-right: 17px;
+            width: 384px;
+        }
+        position: relative;
+        height: 450px;
+        display: inline-block;
+        &-img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        &-content {
+            position: relative;
+            z-index: 3;
+            padding: 36px 32px;
+            height: 100%;
+        }
+        &-date {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 143%;
+            opacity: 0.7;
+        }
+        &-bottom {
+            position: absolute;
+            bottom: 39px;
+            left: 32px;
+            right: 32px;
+        }
+        &-title {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 126%;
+            max-width: 276px;
+        }
+        &-txt {
+            margin-top: 18px;
+            margin-bottom: 18px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 143%;
+            opacity: 0.7;
+        }
+        &-more {
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 126%;
+            i {
+                margin-left: 10px;
+            }
+        }
+        &-overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(42, 44, 49, 0) 0%, #2A2C31 100%);
+            transition: .3s all;
+        }
+    }
+    .slick-list {
+        overflow: visible;
+    }
+}
+
+
+.contacts {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info {
+        width: 100%;
+        max-width: 983px;
+        margin-left: -400px;
+        padding-left: 400px;
+        background: #F5F5F5;
+        padding-top: 106px;
+        padding-bottom: 106px;
+        padding-right: 50px;
+        &-row {
+            display: flex;
+            margin-top: 23px;
+        }
+    }
+    &__title {
+        @extend %title-block;
+        max-width: 402px;
+    }
+    &__col {
+        max-width: 171px;
+        margin-right: 94px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__item {
+        margin-top: 57px;
+        &-title {
+            line-height: 100%;
+        }
+        &-info {
+            line-height: 150%;
+            margin-top: 22px;
+            display: inline-block;
+            opacity: 0.7;
+            &_link {
+                line-height: 150%;
+                color: #2A2C31;
+                text-decoration: none;
+                transition: .3s all;
+                &:hover {
+                    color: #3465A6;
+                }
+            }
+        }
+        &-viewmap {
+            color: #3465A6;
+            line-height: 100%;
+            border-bottom: 1px dashed #3465A6;
+            text-decoration: none;
+        }
+    }
+    &__form {
+        max-width: 511px;
+        &-txt {
+            line-height: 160%;
+        }
+        &-group {
+            margin-top: 40px;
+        }
+        &-input {
+            @extend %input-default;
+        }
+        &-submit {
+            @extend %btn-fill;
+        }
+    }
+}

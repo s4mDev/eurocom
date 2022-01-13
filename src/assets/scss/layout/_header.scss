@@ -51,20 +51,24 @@
 
 .nav {
     background: #3465A6;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    position: relative;
     &__list {
         display: flex;
         justify-content: center;
         list-style: none;
         &-item {
-            padding-left: 25px;
-            padding-right: 25px;
             display: flex;
             align-items: center;
-            border-right: 1px solid rgba(255,255,255,0.2);
+            padding-top: 25px;
+            padding-bottom: 25px;
             &:last-child {
                 border: none;
+            }
+            &:hover {
+                .nav-dropdown {
+                    opacity: 1;
+                    left: 0;
+                }
             }
         }
         &-link {
@@ -94,6 +98,64 @@
                 display: inline-block;
                 opacity: 0;
                 transition: .3s all;
+            }
+        }
+        &-wrapper {
+            height: 40px;
+            padding-left: 25px;
+            padding-right: 25px;
+            display: flex;
+            align-items: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+    &-dropdown {
+        position: absolute;
+        left: -200vw;
+        padding-top: 37px;
+        width: 100vw;
+        top: 90px;
+        background: #fff;
+        transition: .3s opacity;
+        z-index: 10;
+        padding-bottom: 70px;
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            list-style: none;
+            &-item {
+                margin-top: 20px;
+            }
+            &-group {
+                width: 33.333%;
+            }
+            &-link {
+                display: inline-block;
+                max-width: 342px;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #2A2C31;
+                text-decoration: none;
+            }
+        }
+        &__sublist {
+            margin-top: 5px;
+            padding: 0;
+            list-style: none;
+            &-item {
+                margin-top: 10px;
+            }
+            &-link {
+                font-size: 13px;
+                line-height: 140%;
+                color: #2A2C31;
+                opacity: 0.7;
+                display: inline-block;
+                text-decoration: none;
             }
         }
     }

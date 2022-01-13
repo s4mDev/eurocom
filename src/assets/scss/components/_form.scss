@@ -3,3 +3,26 @@
        margin-bottom: rem(20px);
     }
 }
+
+
+%input-default {
+    width: 100%;
+    height: 35px;
+    padding-bottom: 16px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #DBDBDB;
+    color: #2A2C31;
+    font-size: 15px;
+    line-height: 130%;
+    &::placeholder {
+        color: #2a2c3160;
+    }
+    transition: .3s all;
+    &:hover {
+        border-color: #2A2C31;
+    }
+    &:focus {
+        border-color: #2A2C31;
+    }
+}

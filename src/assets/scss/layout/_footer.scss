@@ -1,3 +1,173 @@
 .footer {
-    background-color: transparent;
+    background: #2E66B0;
+    color: #fff;
+    padding-top: 78px;
+    padding-bottom: 74px;
+    margin-top: 100px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__subscribe {
+        display: flex;
+        align-items: center;
+        &-txt {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 30px;
+            text-transform: uppercase;
+            margin-right: 37px;
+        }
+        &-formgroup {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        &-submit {
+            width: 44px;
+            height: 44px;
+            position: absolute;
+            right: 0;
+            top: 1px;
+            background: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-input {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            height: 46px;
+            width: 311px;
+            background: transparent;
+            color: #fff;
+            padding-left: 24px;
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 14px;
+                line-height: 170%;
+            }
+        }
+    }
+    &__row {
+        display: flex;
+        margin-top: 48px;
+    }
+    &__contacts {
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+        &-icon {
+            i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(255,255,255,0.08);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+            margin-right: 20px;
+        }
+        &-info {
+            font-size: 13px;
+            line-height: 18px;
+            text-transform: uppercase;
+            &_link {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        &-title {
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
+            opacity: 0.7;
+            margin-top: 7px;
+        }
+    }
+    &__nav {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 130px;
+        max-width: 800px;
+        &-item {
+            width: 33.333%;
+            line-height: 16px;
+        }
+        &-link {
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: .3s all;
+            position: relative;
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                width: 0;
+                bottom: -5px;
+                height: 2px;
+                background: #fff;
+                transition: .3s all;
+            }
+            &:hover {
+                color: #fff;
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__politic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 39px;
+        padding-top: 36px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        &-we {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.6);
+            i {
+                margin-right: 7px;
+            }
+        }
+        &-txt {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: right;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        &-link {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
 }
