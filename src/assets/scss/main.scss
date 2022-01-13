@@ -3,6 +3,7 @@
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/reboot";
 @import "~sass-rem/rem";
+@import "~slick-slider/slick/slick";
 @import "mixins/utility";
 @import "base/variables";
 @import "base/fonts";
@@ -27,4 +28,207 @@ body {
     font-weight: 500;
     font-size: 18px;
     color: #2A2C31;
+}
+
+.main-banner {
+    margin-top: 85px;
+    margin-bottom: 110px;
+    &__item {
+        position: relative;
+        height: 456px;
+        display: flex!important;
+        align-items: center;
+    }
+    &__bg {
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        &-img {
+            width: 100%;
+            min-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        padding-left: 161px;
+        padding-right: 161px;
+    }
+    &__title {
+        @extend %title-block;
+        line-height: 125%;
+        max-width: 583px;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 23px;
+        margin-bottom: 32px;
+    }
+    &__button {
+        @extend %btn-transparent;
+    }
+    .slick-arrow {
+        position: absolute;
+        z-index: 4;
+        content: '';
+        font-size: 0;
+        width: 15px;
+        height: 28px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../../assets/img/banner-ar.svg) center no-repeat;
+    }
+    .slick-prev {
+        left: 45px;
+    }
+    .slick-next {
+        right: 45px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+}
+
+.main-about {
+    &__title {
+        max-width: 939px;
+        @extend %title-block;
+    }
+    &__txt {
+        line-height: 160%;
+        max-width: 704px;
+        margin-top: 25px;
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 39px;
+    }
+    &__image {
+        width: 100%;
+        min-width: 558px;
+        position: relative;
+        &-pic {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        padding: 90px 78px 90px 297px;
+        margin-left: -220px;
+        background: #F5F5F5;
+        &-title {
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 160%;
+        }
+        &-txt {
+            line-height: 160%;
+            opacity: 0.7;
+            margin-top: 29px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.main-today {
+    margin-top: 128px;
+    margin-bottom: 120px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        @extend %title-block;
+        min-width: 253px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 127px;
+    }
+    &__item {
+        &-title {
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 150%;
+            color: #3465A6;
+        }
+        &-txt {
+            line-height: 150%;
+            max-width: 266px;
+            margin-bottom: 34px;
+        }
+        &-shape {
+            width: 103px;
+            height: 4px;
+            background: #3465A6;
+        }
+    }
+}
+
+.ways {
+    background: #F5F5F5;
+    padding-top: 107px;
+    padding-bottom: 114px;
+    &__title {
+        @extend %title-block;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -13px;
+        margin-right: -13px;
+    }
+    &__item {
+        background: #fff;
+        height: 100%;
+        border: 1px solid #D8D8D8;
+        display: flex;
+        align-items: center;
+        &-wrapper {
+            padding-left: 13px;
+            padding-right: 13px;
+            margin-top: 27px;
+            width: 25%;
+        }
+        &-image {
+            width: 62px;
+            min-height: 100%;
+            background: #3465A6;
+            border-right: 1px solid #D8D8D8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
+            img {
+                width: 100%;
+            }
+        }
+        &-txt {
+            margin-bottom: 0;
+            max-width: 141px;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+            opacity: 0.7;
+            margin-top: 9px;
+        }
+        &-title {
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 600;
+        }
+        &-content {
+            padding: 29px 29px;
+        }
+    }
 }

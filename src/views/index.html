@@ -1,26 +1,280 @@
 <%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
 
   <main class="homepage" id="root">
-    <div class="main-banner">
+    <section class="main-banner">
         <div class="container">
             <div class="main-banner__slider">
                 <div class="main-banner__item">
                     <div class="main-banner__bg">
                         <img src="<%=require('@img/banner-bg.jpg') %>" alt="" class="main-banner__bg-img">
                     </div>
-                    <h2 class="main-banner__title">
-                        Дарим скидку на профессиональную консультацию юриста 
-                    </h2>
-                    <p class="main-banner__subtitle">
-                        подзаголовок баннера
-                    </p>
-                    <a href="" class="main-banner__button">
-                        Подробнее
-                    </a>
+                    <div class="main-banner__content">
+                        <h2 class="main-banner__title">
+                            Дарим скидку на профессиональную консультацию юриста 
+                        </h2>
+                        <p class="main-banner__subtitle">
+                            подзаголовок баннера
+                        </p>
+                        <a href="" class="main-banner__button">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="main-banner__item">
+                    <div class="main-banner__bg">
+                        <img src="<%=require('@img/banner-bg.jpg') %>" alt="" class="main-banner__bg-img">
+                    </div>
+                    <div class="main-banner__content">
+                        <h2 class="main-banner__title">
+                            Дарим скидку на профессиональную консультацию юриста 
+                        </h2>
+                        <p class="main-banner__subtitle">
+                            подзаголовок баннера
+                        </p>
+                        <a href="" class="main-banner__button">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="main-banner__item">
+                    <div class="main-banner__bg">
+                        <img src="<%=require('@img/banner-bg.jpg') %>" alt="" class="main-banner__bg-img">
+                    </div>
+                    <div class="main-banner__content">
+                        <h2 class="main-banner__title">
+                            Дарим скидку на профессиональную консультацию юриста 
+                        </h2>
+                        <p class="main-banner__subtitle">
+                            подзаголовок баннера
+                        </p>
+                        <a href="" class="main-banner__button">
+                            Подробнее
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="main-about">
+        <div class="container">
+            <h2 class="main-about__title">
+                Евроком - ведущая российская компания, предоставляющая более 300 услуг в различных областях для бизнеса и частных лиц.
+            </h2>
+            <p class="main-about__txt">
+                В структуре компании создан современный лабораторный комплекс, функционируют аккредитованные органы по сертификации продукции и систем менеджмента.
+            </p>
+            <div class="main-about__row">
+                <div class="main-about__image">
+                    <img src="<%=require('@img/main-about.png') %>" alt="" class="main-about__image-pic">
+                </div>
+                <div class="main-about__content">
+                    <div class="main-about__content-wrapper">
+                        <h2 class="main-about__content-title">
+                            Consectetur tristique cursus etiam diam fringilla
+                        </h2>
+                        <p class="main-about__content-txt">
+                            Amet, aenean morbi massa vitae diam risus tellus aliquet. Consectetur ornare ultrices nunc elit, purus tempor. Commodo amet, nibh a et nibh. Ridiculus id morbi leo ut mi mi commodo rhoncus. Consectetur tristique cursus etiam diam fringilla. Amet est enim suspendisse mi sed gravida sit nisl dui. Amet, aenean morbi massa vitae diam risus tellus aliquet. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-today">
+        <div class="container">
+            <div class="main-today__row">
+                <div class="main-today__title">
+                    Сегодня <br> Евроком это:
+                </div>
+                <div class="main-today__info">
+                    <div class="main-today__item">
+                        <div class="main-today__item-title">
+                            20 лет
+                        </div>
+                        <p class="main-today__item-txt">
+                            успеха на рынке <br> консалтинговых услуг
+                        </p>
+                        <div class="main-today__item-shape"></div>
+                    </div>
+                    <div class="main-today__item">
+                        <div class="main-today__item-title">
+                            >20
+                        </div>
+                        <p class="main-today__item-txt">
+                            сотрудников <br>
+                            в нашем штате
+                        </p>
+                        <div class="main-today__item-shape"></div>
+                    </div>
+                    <div class="main-today__item">
+                        <div class="main-today__item-title">
+                            >50 тыс.
+                        </div>
+                        <p class="main-today__item-txt">
+                            клиентов воспользовались <br> нашими услугами
+                        </p>
+                        <div class="main-today__item-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ways">
+        <div class="container">
+            <h2 class="ways__title">
+                Основные направления деятельности
+            </h2>
+            <div class="ways__row">
+                <div class="ways__item-wrapper">
+                    <div class="ways__item">
+                        <div class="ways__item-image">
+                            <img src="<%=require('@img/ways-1.svg') %>" alt="">
+                        </div>
+                        <div class="ways__item-content">
+                            <div class="ways__item-title">
+                                Лицензирование
+                            </div>
+                            <p class="ways__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ways__item-wrapper">
+                    <div class="ways__item">
+                        <div class="ways__item-image">
+                            <img src="<%=require('@img/ways-1.svg') %>" alt="">
+                        </div>
+                        <div class="ways__item-content">
+                            <div class="ways__item-title">
+                                Ростехнадзор
+                            </div>
+                            <p class="ways__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ways__item-wrapper">
+                    <div class="ways__item">
+                        <div class="ways__item-image">
+                            <img src="<%=require('@img/ways-1.svg') %>" alt="">
+                        </div>
+                        <div class="ways__item-content">
+                            <div class="ways__item-title">
+                                Пожарная безопасность
+                            </div>
+                            <p class="ways__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ways__item-wrapper">
+                    <div class="ways__item">
+                        <div class="ways__item-image">
+                            <img src="<%=require('@img/ways-1.svg') %>" alt="">
+                        </div>
+                        <div class="ways__item-content">
+                            <div class="ways__item-title">
+                                Экологическая безопасность
+                            </div>
+                            <p class="ways__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ways__item-wrapper">
+                    <div class="ways__item">
+                        <div class="ways__item-image">
+                            <img src="<%=require('@img/ways-1.svg') %>" alt="">
+                        </div>
+                        <div class="ways__item-content">
+                            <div class="ways__item-title">
+                                Сертификация. Аттестация. СРО
+                            </div>
+                            <p class="ways__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ways__item-wrapper">
+                    <div class="ways__item">
+                        <div class="ways__item-image">
+                            <img src="<%=require('@img/ways-1.svg') %>" alt="">
+                        </div>
+                        <div class="ways__item-content">
+                            <div class="ways__item-title">
+                                Аккредитация лабораторий
+                            </div>
+                            <p class="ways__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ways__item-wrapper">
+                    <div class="ways__item">
+                        <div class="ways__item-image">
+                            <img src="<%=require('@img/ways-1.svg') %>" alt="">
+                        </div>
+                        <div class="ways__item-content">
+                            <div class="ways__item-title">
+                                Обучение. Аттестация
+                            </div>
+                            <p class="ways__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ways__item-wrapper">
+                    <div class="ways__item">
+                        <div class="ways__item-image">
+                            <img src="<%=require('@img/ways-1.svg') %>" alt="">
+                        </div>
+                        <div class="ways__item-content">
+                            <div class="ways__item-title">
+                                Дополнительные услугия
+                            </div>
+                            <p class="ways__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-news">
+        <div class="container">
+            <div class="popular-news__content">
+                <h2 class="popular-news__title">
+                    Популярные новости
+                </h2>
+                <p class="popular-news__txt">
+                    Amet, aenean morbi massa vitae diam risus tellus aliquet. Consectetur ornare ultrices nunc elit, purus tempor. Commodo amet, nibh a et nibh.
+                </p>
+                <a href="" class="popular-news__button">
+                    Больше статей
+                </a>
+            </div>
+            <div class="popular-news__slider-wrapper">
+                <div class="popular-news__slider news-slider">
+                    <div class="news-slider__item-wrapper">
+                        <a href="#" class="news-slider__item">
+                            <div class="news-slider__item-img">
+                                <img src="<%=require('@img/popular-1.jpg') %>" alt="">
+                                <div class="news-slider__item-overlay"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
   </main>
 
   <%= require('@parts/footer.ejs')() %>

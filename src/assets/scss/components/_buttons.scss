@@ -1,3 +1,24 @@
 %btn-accent {
     color: $accent;
 }
+
+%btn-transparent {
+    display: inline-block;
+    border: 1px solid #3465A6;
+    padding: 15px 34px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 18px;
+    background: transparent;
+    color: #2A2C31;
+    transition: .5s all;
+    &:hover {
+        background: #3465A6;
+        color: #fff;
+    }
+    &:focus {
+        background: #275086;
+        color: #fff;
+    }
+}
