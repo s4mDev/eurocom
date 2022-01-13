@@ -1,0 +1,26 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+  <main class="homepage" id="root">
+    <div class="main-banner">
+        <div class="container">
+            <div class="main-banner__slider">
+                <div class="main-banner__item">
+                    <div class="main-banner__bg">
+                        <img src="<%=require('@img/banner-bg.jpg') %>" alt="" class="main-banner__bg-img">
+                    </div>
+                    <h2 class="main-banner__title">
+                        Дарим скидку на профессиональную консультацию юриста 
+                    </h2>
+                    <p class="main-banner__subtitle">
+                        подзаголовок баннера
+                    </p>
+                    <a href="" class="main-banner__button">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <%= require('@parts/footer.ejs')() %>
