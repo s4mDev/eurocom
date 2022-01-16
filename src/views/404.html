@@ -1,0 +1,17 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+  <main class="innerpage" id="root">
+    <section class="page-404">
+        <div class="container">
+            <h2 class="page-404__title">
+                404
+            </h2>
+            <p class="page-404__subtitle">
+                Такой страницы не существует...
+            </p>
+            <a href="/" class="page-404__btn">Перейти на главную</a>
+        </div>
+    </section>
+  </main>
+
+  <%= require('@parts/footer.ejs')() %>

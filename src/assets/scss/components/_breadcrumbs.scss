@@ -1,7 +1,33 @@
 .breadcrumbs {
-    &__list {
-        @include unlist;
-        display: flex;
-        align-items: center;
+    margin-top: 50px;
+    &__link {
+        font-size: 14px;
+        line-height: 17px;
+        color: #2a2c316c;
+        transition: .3s all;
+        text-decoration: none;
+        position: relative;
+        &::after {
+            font-size: 15px;
+            line-height: 18px;
+            color: #2A2C31;
+            opacity: 0.4;
+            content: '/';
+            display: inline-block;
+            right: -19px;
+            top: -1px;
+            position: absolute;
+        }
+        &:hover {
+            opacity: 1;
+            color: #3465A6;
+        }
+        display: inline-block;
+        margin-right: 26px;
+    }
+    &__active {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 17px;
     }
 }
