@@ -1,15 +1,26 @@
 <%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
 
   <main class="innerpage" id="root">
-    <section class="page-404">
+    <section class="article">
         <div class="container">
-            <h2 class="page-404__title">
-                404
-            </h2>
-            <p class="page-404__subtitle">
-                Такой страницы не существует...
-            </p>
-            <a href="/" class="page-404__btn">Перейти на главную</a>
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs__link">
+                    Главная
+                </a>
+                <span class="breadcrumbs__active">
+                    Отзывы
+                </span>
+            </div>
+            <div class="article__content">
+                <h1>Сопровождение в получении лицензии. Что для этого нужно?</h1>
+                <div class="date">
+                    03 мая 2021 г.
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <img src="" alt="">
+            </div>
         </div>
     </section>
   </main>
