@@ -1,0 +1,205 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+  <main class="innerpage" id="root">
+    <section class="main-about">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="" class="breadcrumbs__link">
+                    Главная
+                </a>
+                <span class="breadcrumbs__active">
+                    Лицензирование
+                </span>
+            </div>
+            <div class="main-about__row">
+                <div class="main-about__image">
+                    <img src="<%=require('@img/about-image.png') %>" alt="" class="main-about__image-pic">
+                </div>
+                <div class="main-about__content">
+                    <div class="main-about__content-wrapper">
+                        <h2 class="main-about__content-title">
+                            О компании
+                        </h2>
+                        <p class="main-about__content-txt">
+                            Amet, aenean morbi massa vitae diam risus tellus aliquet. Consectetur ornare ultrices nunc elit, purus tempor. Commodo amet, nibh a et nibh. Ridiculus id morbi leo ut mi mi commodo rhoncus. Consectetur tristique cursus etiam diam fringilla. Amet est enim suspendisse mi sed gravida sit nisl dui. Amet, aenean morbi massa vitae diam risus tellus aliquet. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-quote">
+        <div class="container">
+            <div class="about-quote__top">
+                <div class="about-quote__top-shape about-quote__top-shape_1"></div>
+                <div class="about-quote__top-image">
+                    <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.2293 0.791626H6.45155L0.520996 14.3472V26.2083H12.3821V14.3472H7.29877L13.2293 0.791626Z" fill="white"/>
+                        <path d="M29.328 0.791626H22.5502L16.6196 14.3472V26.2083H28.4807V14.3472H23.3974L29.328 0.791626Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="about-quote__top-shape about-quote__top-shape_2"></div>
+            </div>
+            <p class="about-quote__txt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#" class="about-quote__txt-link">Ut enim ad minim veniam</a>, <a href="" class="about-quote__txt-link">quis nostrud exercitation ullamco laboris</a> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </section>
+    <section class="main-today">
+        <div class="container">
+            <div class="main-today__row">
+                <div class="main-today__title">
+                    Сегодня <br> Евроком это:
+                </div>
+                <div class="main-today__info">
+                    <div class="main-today__item">
+                        <div class="main-today__item-title">
+                            20 лет
+                        </div>
+                        <p class="main-today__item-txt">
+                            успеха на рынке <br> консалтинговых услуг
+                        </p>
+                        <div class="main-today__item-shape"></div>
+                    </div>
+                    <div class="main-today__item">
+                        <div class="main-today__item-title">
+                            >20
+                        </div>
+                        <p class="main-today__item-txt">
+                            сотрудников <br>
+                            в нашем штате
+                        </p>
+                        <div class="main-today__item-shape"></div>
+                    </div>
+                    <div class="main-today__item">
+                        <div class="main-today__item-title">
+                            >50 тыс.
+                        </div>
+                        <p class="main-today__item-txt">
+                            клиентов воспользовались <br> нашими услугами
+                        </p>
+                        <div class="main-today__item-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-cards">
+        <div class="container">
+            <div class="about-cards__row">
+                <div class="about-cards__item-wrapper">
+                    <div class="about-cards__item">
+                        <div class="about-cards__item-img">
+                            <img src="<%=require('@img/about-card-1.jpg') %>" alt="" class="about-cards__item-pic">
+                            <div class="about-cards__item-overlay"></div>
+                        </div>
+                        <div class="about-cards__item-content">
+                            <div class="about-cards__item-count">
+                                1
+                            </div>
+                            <p class="about-cards__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards__item-wrapper">
+                    <div class="about-cards__item">
+                        <div class="about-cards__item-img">
+                            <img src="<%=require('@img/about-card-1.jpg') %>" alt="" class="about-cards__item-pic">
+                            <div class="about-cards__item-overlay"></div>
+                        </div>
+                        <div class="about-cards__item-content">
+                            <div class="about-cards__item-count">
+                                2
+                            </div>
+                            <p class="about-cards__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards__item-wrapper">
+                    <div class="about-cards__item">
+                        <div class="about-cards__item-img">
+                            <img src="<%=require('@img/about-card-1.jpg') %>" alt="" class="about-cards__item-pic">
+                            <div class="about-cards__item-overlay"></div>
+                        </div>
+                        <div class="about-cards__item-content">
+                            <div class="about-cards__item-count">
+                                3
+                            </div>
+                            <p class="about-cards__item-txt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-documents">
+        <div class="container">
+            <div class="about-documents__row">
+                <div class="about-documents__content">
+                    <h2 class="about-documents__title">
+                        Документы <br>
+                        и сертификаты
+                    </h2>
+                    <p class="about-documents__txt">
+                        Amet, aenean morbi massa vitae diam risus tellus aliquet. Consectetur ornare ultrices nunc elit, purus tempor. Commodo amet, nibh a et nibh.
+                    </p>
+                    <div class="about-documents__counter">
+                        <div class="about-documents__counter-now">
+                            01
+                        </div>
+                        <div class="about-documents__counter-slash">
+                            /
+                        </div>
+                        <div class="about-documents__counter-all">
+
+                        </div>
+                    </div>
+                    <div class="about-documents__nav">
+                        <div class="about-documents__nav-item">
+
+                        </div>
+                        <div class="about-documents__nav-item">
+                            
+                        </div>
+                        <div class="about-documents__nav-item">
+                            
+                        </div>
+                        <div class="about-documents__nav-item">
+                            
+                        </div>
+                        <div class="about-documents__nav-item">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="about-documents__slider-wrapper">
+                    <div class="about-documents__slider">
+                        <div class="about-documents__slider-item">
+                            <a href="#" class="about-documents__slider-image"><img src="<%=require('@img/documents-slider.jpg') %>" alt=""></a>
+                        </div>
+                        <div class="about-documents__slider-item">
+                            <a href="#" class="about-documents__slider-image"><img src="<%=require('@img/documents-slider.jpg') %>" alt=""></a>
+                        </div>
+                        <div class="about-documents__slider-item">
+                            <a href="#" class="about-documents__slider-image"><img src="<%=require('@img/documents-slider.jpg') %>" alt=""></a>
+                        </div>
+                        <div class="about-documents__slider-item">
+                            <a href="#" class="about-documents__slider-image"><img src="<%=require('@img/documents-slider.jpg') %>" alt=""></a>
+                        </div>
+                        <div class="about-documents__slider-item">
+                            <a href="#" class="about-documents__slider-image"><img src="<%=require('@img/documents-slider.jpg') %>" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <%= require('@parts/footer.ejs')() %>
