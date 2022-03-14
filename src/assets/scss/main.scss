@@ -30,6 +30,10 @@ body {
     color: #2A2C31;
 }
 
+.header__burger {
+    display: none;
+}
+
 .main-banner {
     margin-top: 85px;
     margin-bottom: 110px;
@@ -228,6 +232,7 @@ body {
         }
 
         &-image {
+            min-width: 62px;
             width: 62px;
             min-height: 100%;
             background: #3465A6;

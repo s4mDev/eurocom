@@ -46,3 +46,11 @@ $('.about-documents__counter-all').html('0' + $('.about-documents__slider').slic
 $('.about-documents__slider').on('afterChange', function (event, slick, currentSlide) {
     $('.about-documents__counter-now').text('0' + (currentSlide + 1));
 });
+
+$('.mob-nav__list-open').click(function () {
+    $(this).parent('.mob-nav__list-wrapper').toggleClass('mob-nav__list-wrapper_open');
+});
+
+$('.header__burger').click(function () {
+    $('body').toggleClass('open-nav');
+});

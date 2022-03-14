@@ -45,11 +45,27 @@
     .blog__buttons {
         margin-top: 45px;
     }
+    .nav__list-link {
+        font-size: 14px;
+    }
+    .nav__list-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .ways__item-content {
+        padding: 29px 15px;
+    }
+    .ways__item-title {
+        font-size: 14px;
+    }
 }
 
 
 
 @media(max-width: 991px) {
+    body {
+        padding-top: 90px;
+    }
     .container {
         max-width: 767px;
     }
@@ -151,7 +167,142 @@
     .blockquote__txt {
         font-size: 20px;
     }
+    .header__nav {
+        display: none;
+    }
+    .header {
+        border-bottom: 1px solid #3465A6;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #fff;
+        z-index: 10;
+        left: 0;
+    }
+    .header__burger {
+        display: block;
+        cursor: pointer;
+        span {
+            width: 30px;
+            height: 2px;
+            background: #3465A6;
+            display: block;
+            margin-top: 6px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+    }
+    .nav {
+        display: none;
+    }
+    .mob-nav {
+        position: fixed;
+        overflow: auto;
+        display: block;
+        background: #fff;
+        top: 93px;
+        width: 100vw;
+        bottom: 0;
+        left: -200vw;
+        opacity: 0;
+        z-index: 10;
+        transition: .3s opacity;
+        &__main {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            margin-top: 30px;
+            &-item {
+                margin-bottom: 30px;
+            }
+            &-link {
+                color: #2A2C31;
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+        &__list {
+            &-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &_open {
+                    .mob-nav__list-open {
+                        svg {
+                            transform: rotate(270deg);
+                        }
+                    }
+                    & + .mob-nav__sublist {
+                        max-height: 10000px;
+                    }
+                }
+            }
+            &-item {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                border-bottom: 1px solid #3465A6;
+            }
+            &-open {
+                padding-left: 10px;
+                padding-right: 10px;
+                cursor: pointer;
+                svg {
+                    transform: rotate(180deg);
+                    transition: .3s all;
+                }
+            }
+            &-link {
+                color: #2A2C31;
+                text-decoration: none;
+                font-size: 18px;
+                width: 100%;
+            }
+        }
+        &__sublist {
+            list-style: none;
+            padding-left: 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: .5s all;
+            &-item {
+                margin-top: 10px;
+            }
+            &-link {
+                color: #2A2C31;
+                text-decoration: none;
+                font-size: 16px;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+        &__subsublist {
+            list-style: none;
+            margin-top: 10px;
+            padding-left: 15px;
+            &-link {
+                text-decoration: none;
+                color: #2a2c318a;
+                font-size: 16px;
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .open-nav {
+        overflow: hidden;
+        max-height: 100vh;
+        max-width: 100vw;
+        .mob-nav {
+            left: 0;
+            opacity: 1;
+        }
+    }
 }
+
 
 
 @media(max-width: 767px) {
@@ -559,5 +710,11 @@
         padding-top: 35px;
         margin-top: 35px;
         padding-bottom: 35px;
+    }
+    .header__logo svg {
+        max-width: 50px;
+    }
+    .header__contacts {
+        max-width: 150px;
     }
 }
